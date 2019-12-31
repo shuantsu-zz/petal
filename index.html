@@ -26,9 +26,10 @@
 		
 		
 		<script>
-		var rotation = 0;
+		let rotation = 0;
+		const $petal = document.querySelector("#petal");
 		window.setInterval(function() {
-			document.querySelector("#petal").style.transform = "rotate(" + rotation + "deg)";
+			$petal.style.transform = "rotate(" + rotation + "deg)";
 			rotation = (rotation + 15) % 360;
 		}, 100);
 		</script>
